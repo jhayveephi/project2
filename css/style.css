@@ -1,0 +1,229 @@
+* {
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 1.3;
+}
+
+body {
+    background-color: beige;
+    font-size: 1rem;
+}
+
+.name{
+    font-weight: bold;
+    font-size: 2rem;
+    
+}
+
+h1{
+    text-align: center;
+    padding: 2rem 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: bold;
+}
+
+.top{
+    background-color: beige;
+    padding: 0.5rem 1rem;
+    z-index: 100;
+    transition: all 0.5s;
+}
+
+.top ul {
+    padding: 0.3rem 0;
+}
+
+.top ul li {
+    text-transform: uppercase;
+    list-style: none;
+    display: block;
+    margin: 0.5rem 0;
+    padding: 1rem;
+}
+
+.top:hover {
+    background-color: rgb(155, 233, 135);
+}
+
+a:hover,
+a:visited:hover {
+    color: rgba(108, 63, 150, 0.8);
+}
+
+a,
+a:visited {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.profile-photo {
+    width: 100%;
+    max-width: 350px;
+}
+
+.heading{
+    padding: 1rem 4rem;
+    margin-top: 2rem;
+}
+
+.heading p {
+    margin: 0.5rem 0.8rem 3rem 0.8rem;
+    line-height: 1.3;
+}
+
+#portfolio:target::before {
+    content:"";
+    display:block;
+    top: -20rem;
+}
+
+h2{
+    font-size: 1.5rem;
+    padding: 0.8rem 0;
+}
+
+main.main-body {
+    background-color: white;
+}
+
+.card {
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 33%;
+    padding: 0 1rem;
+    transition: all 0.5s;
+    float: left;
+
+}
+
+.card:hover {
+    background-color: rgba(181, 142, 218, 0.8);
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,0.31),
+    0 5px 15px 0 rgba(0,0,0,0.38);
+}
+
+.card img {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    padding-top: 0.5rem;
+}
+
+p {
+    padding-top: 0.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+#contact {
+    background-color: beige;
+    color: rgb(94, 98, 102);
+    padding: 1rem 1rem;
+}
+
+.details li {
+    /* margin: 1.5rem 0; */
+    margin-top: 1rem;
+}
+
+footer {
+    margin: 1.5rem 0;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.bottom{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.bottom .nav{
+    display: flex;
+}
+
+.bottom li {
+    padding: 5px;
+}
+
+
+
+#jerome-name{
+    color: blue
+}
+
+#jerome-name:hover{
+    color: yellow;
+}
+
+@media screen and (min-width: 768px) {
+    body * {
+        vertical-align: top;
+    }
+
+    .heading {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 3rem;
+        padding: 20px;
+    }
+    .heading p {
+        text-align: left;
+        width: 100%;
+        padding-right: 1rem;
+    }
+    header * {
+        justify-content: space-around;
+    }
+
+    .top ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .top ul li {
+        padding: 0 2rem;
+    }
+    
+
+} 
+    
+   
+
+@media screen and (min-width: 1024px) {
+    body {
+        max-width: 1024px;
+        margin: auto;
+    }
+
+    .heading {
+        padding: 0 2rem;
+        width: 100%;
+    }
+    .top {
+        padding: 1.7rem 0;
+        display: inline-flex;
+    }
+
+    .top ul {
+        max-width: 1024px;
+        justify-content: flex-end;
+    }
+    .card{
+        width: 50%;
+    }
+}
